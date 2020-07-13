@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 3.7)
+project (triangle_check)
+#set(CMAKE_CXX_FLAGS "-fprofile-arcs -ftest-coverage")
+add_executable(triangle src/main.cpp)
+add_executable(triangleTest test/main_test.cpp)
+target_link_libraries(triangleTest gtest gtest_main rt pthread)
