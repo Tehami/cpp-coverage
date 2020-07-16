@@ -1,0 +1,2 @@
+add_executable(triangleTest main_test.cpp)
+target_link_libraries(triangleTest gtest gtest_main pthread)
